@@ -1,0 +1,28 @@
+.poster_container {
+    width: 175px;
+    height: 325px;
+    // border: 1px solid black;
+    margin: 5px 20px 5px 20px;
+    cursor: pointer;
+    user-select: none;
+
+    &_image {
+        position: relative;
+        width: 175px;
+        height: 225px;
+    }
+
+    &_name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &_duration {
+        font-size: 14px;
+    }
+
+    &_userRating{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}

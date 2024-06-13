@@ -1,0 +1,51 @@
+.movie_detail_container {
+    width: 75%;
+    margin: auto;
+}
+
+.movie_detail_inner_container {
+    margin: 5px 0 5px 20px;
+
+    &_backButton {
+        margin-top: 10px;
+    }
+
+    &_title {
+        font-size: 24px;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+
+    &_rating {
+        font-size: 12px;
+        border-bottom: 1px solid grey;
+        padding: 0 0 30px 0;
+    }
+
+    &_detail {
+        padding: 10px 0 0 0;
+        display: flex;
+
+        &_image {
+            position: relative;
+            width: 235px;
+            height: 360px;
+        }
+
+        &_info {
+            padding: 0 20px;
+            width: 70%;
+
+            &_title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            &_text {
+                font-size: 14px;
+                padding: 5px 0;
+            }
+        }
+    }
+
+}

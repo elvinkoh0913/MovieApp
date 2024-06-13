@@ -26,6 +26,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets/images/",
+              "src/mock-data/",
               {
                 "glob": "**/*",
                 "input": "public"

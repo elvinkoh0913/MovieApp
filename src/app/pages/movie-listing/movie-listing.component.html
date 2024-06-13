@@ -1,0 +1,10 @@
+<div class="movie_list_container">
+    <div class="movie_list_container_searchbar">
+        <input placeholder="Search Movies..." (keyup)="onKeyup($event)"/>
+    </div>
+    <div class="movie_list_container_subtitle">Popular Movies this month</div>
+    <div class="movie_list_container_poster_container">
+        <app-movie-poster *ngFor="let movie of movieListResult" [movie]="movie" (click)="goToDetails(movie.id)">
+        </app-movie-poster>
+    </div>
+</div>

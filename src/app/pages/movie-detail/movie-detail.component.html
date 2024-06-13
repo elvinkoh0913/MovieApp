@@ -1,0 +1,21 @@
+<div class="movie_detail_container">
+    <div class="movie_detail_inner_container">
+        <button (click)="goBack()" class="movie_detail_inner_container_backButton">Back</button>
+        <div class="movie_detail_inner_container_title">{{ selectedMovie?.name }}</div>
+        <div class="movie_detail_inner_container_rating">({{ selectedMovie?.mpaaRating?.type }}: {{ selectedMovie?.mpaaRating?.label }})</div>
+        <div class="movie_detail_inner_container_detail">
+            <div class="movie_detail_inner_container_detail_image">
+                <img ngSrc="{{ defaultImagePath }}" fill>
+            </div>
+            <div class="movie_detail_inner_container_detail_info">
+                <div class="movie_detail_inner_container_detail_info_title">Details</div>
+                <div class="movie_detail_inner_container_detail_info_text">Genre: {{ genreText }}</div>
+                <div class="movie_detail_inner_container_detail_info_text">Language: {{ selectedMovie?.language }}</div>
+                <div class="movie_detail_inner_container_detail_info_text">Duration: {{ selectedMovie?.duration }} minutes</div>
+                <div class="movie_detail_inner_container_detail_info_text">User Rating: {{ selectedMovie?.userRating }}</div>
+                <div class="movie_detail_inner_container_detail_info_title">Synopsis</div>
+                <div class="movie_detail_inner_container_detail_info_text">{{ selectedMovie?.description }}</div>
+            </div>
+        </div>
+    </div>
+</div>
